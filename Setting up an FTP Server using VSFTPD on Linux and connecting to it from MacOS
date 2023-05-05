@@ -1,0 +1,26 @@
+Overview: In this project, I set up an FTP server on my Linux virtual machine using the open-source VSFTPD server software. I then connected to the server from my MacOS machine using an FTP client and transferred files between the server and the client. This project allowed me to gain experience in configuring and managing an FTP server, as well as connecting to it from a remote machine.
+
+Setup Process
+
+Installing VSFTPD on Linux:
+Open the terminal on the Linux virtual machine and enter the following command to install VSFTPD: sudo apt-get install vsftpd 
+Once the installation is complete, navigate to the VSFTPD configuration file at /etc/vsftpd.conf using the following command:sudo nano /etc/vsftpd.conf 
+Configure the server settings in the vsftpd.conf file according to your preferences. For example, you can set the anonymous access settings, user authentication, and file transfer settings.
+Save the changes to the vsftpd.conf file and exit the text editor.
+Restart the VSFTPD service to apply the changes using the following command:sudo systemctl restart vsftpd 
+
+Connecting to the FTP Server from MacOS
+Open Finder on MacOS, click go and scroll down to connect to the server 
+Enter the IP address or hostname of the Linux virtual machine in the "Server Address" field.
+Enter the FTP username and password that you created earlier in the appropriate fields.
+Click "Connect" to establish a connection to the FTP server.
+
+File Transfer between Linux and MacOS
+Once the connection is established, you can navigate to the directories on the Linux virtual machine and the MacOS machine using the FTP client.
+Transfer files between the two machines by dragging and dropping them from one directory to another.
+
+Challenges Encountered
+I encountered some challenges when configuring the VSFTPD server, particularly with the file permissions and user authentication settings. However, I was able to overcome these challenges by consulting online resources and experimenting with different settings until I found a configuration that worked.
+
+Conclusion
+This project allowed me to gain experience in setting up and configuring an FTP server using VSFTPD on Linux, as well as connecting to the server from a remote machine using an FTP client. Through this project, I learned about various server settings, file permissions, and user authentication methods. Overall, this project was a valuable learning experience that I can apply to future projects involving server management and file transfer protocols.
